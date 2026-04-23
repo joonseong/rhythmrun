@@ -1,5 +1,21 @@
 # RhythmRun — CLAUDE.md
 
+## 역할별 하네스 (Role-specific Harnesses)
+
+작업하는 역할에 따라 해당 디렉토리에서 Claude를 시작하면 맞춤 컨텍스트가 자동으로 로드됩니다.
+
+| 역할 | 디렉토리 | 특화 내용 |
+|------|----------|----------|
+| 기획자 | `docs/planning/` | 제품 비전, MVP 범위, 성공 지표, 마일스톤 |
+| 디자이너 | `docs/design/` | 색상 토큰, 타이포그래피, 컴포넌트 스펙, Do/Don't |
+| iOS 개발자 | `RhythmRun/Features/` | SwiftUI MVVM, 화면 구현, 디자인 토큰 적용 |
+| 백엔드 개발자 | `RhythmRun/Core/` | 알고리즘, Service Protocol, 스토리지, 테스트 |
+
+> Claude Code는 현재 디렉토리와 상위 디렉토리의 CLAUDE.md를 모두 읽습니다.
+> 역할 디렉토리에서 시작하면 루트 컨텍스트 + 역할 컨텍스트가 합쳐집니다.
+
+---
+
 ## 프로젝트 개요
 
 **"달릴 때마다 게임이 된다"** — 러너의 발걸음이 곧 리듬이고, 리듬이 곧 게임플레이.
