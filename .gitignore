@@ -54,3 +54,6 @@ GoogleService-Info.plist
 # IDE
 .vscode/
 .idea/
+
+# Claude Code 하네스 — 다운로드 바이너리 제외
+.claude/bin/
